@@ -14,7 +14,3 @@ def f():
     return {'a': a, 'b': b, 'c': c}
 
 print(f())
-
-# this is a test sentence to indicate changes in github
-# this is a second sentence to indicate changes in github
-# this is a third sentence to indicate changees in github
