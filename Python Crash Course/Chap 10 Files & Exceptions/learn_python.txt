@@ -1,0 +1,5 @@
+In Python you can write program for data science
+In Python you can write program for AI
+In Python you can write web pages
+In Python you can develop system software
+In Python you can develop mini games
