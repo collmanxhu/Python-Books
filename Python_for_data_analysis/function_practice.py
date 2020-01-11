@@ -14,3 +14,8 @@ def f():
     return {'a': a, 'b': b, 'c': c}
 
 print(f())
+
+"""
+What is Git, what is GitHub, and what's the difference? Learn the basics of
+Git and GitHub from the perspective of a Pythonista in this tutorial.
+"""
