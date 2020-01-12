@@ -20,3 +20,37 @@ print(f())
 # below are inputs from submitted survey data. One way to clear the mess is to use built-in strings
 # methods along with 're' standard lib module for regular expressions
 states = ['Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda', 'south carolina##', 'West virginia?']
+
+import re
+
+def clean_strings(strings):
+    result = []
+    for value in strings:
+        value = value.strip()
+        value = re.sub('[!#?]', '', value)
+        value = value.title()
+        result.append(value)
+    return result
+
+print(clean_strings(states))
+
+# An alternative approach that you may find useful is to mmake a list of the
+# operation you want to apply to a particular set of strings
+def remove_punctuation(value):
+    return re.sub('[!#?]', '', value)
+
+clean_ops = [str.strip, remove_punctuation, str.title]
+
+def clean_strings(strings, ops):
+    result = []
+    for value in strings:
+        for function in ops:
+            value = function(value)
+        result.append(value)
+    return result
+
+print(clean_strings(states, clean_ops))
+
+
+
+        
