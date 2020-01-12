@@ -11,3 +11,4 @@ def git_conflict_resolve():
 
 print('hello world")
 from numpy import random as rd
+# This is remote repo : sentance for testing
