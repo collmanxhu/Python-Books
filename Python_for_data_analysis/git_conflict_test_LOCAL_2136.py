@@ -8,5 +8,3 @@ def git_conflict_resolve():
     b = 6
     c = 7
     return a, b c
-
-print('hello world")
