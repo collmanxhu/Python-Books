@@ -15,5 +15,8 @@ def f():
 
 print(f())
 
-# this is a test line , added something here
-# this is the secone line test
+"""Function is object, so many constructs can be easily expressed 
+"""
+# below are inputs from submitted survey data. One way to clear the mess is to use built-in strings
+# methods along with 're' standard lib module for regular expressions
+states = ['Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda', 'south carolina##', 'West virginia?']
