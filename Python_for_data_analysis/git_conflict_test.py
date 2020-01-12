@@ -10,3 +10,4 @@ def git_conflict_resolve():
     return a, b c
 
 print('hello world")
+from numpy import random as rd
