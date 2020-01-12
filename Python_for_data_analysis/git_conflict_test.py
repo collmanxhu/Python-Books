@@ -32,5 +32,3 @@ alien_0['y_position'] = 25
 print(alien_0)
 alien_0['color'] = 'yellow'
 print(alien_0)
-
-# test github desktop for handling conflict
