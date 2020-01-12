@@ -11,3 +11,7 @@ def git_conflict_resolve():
 
 print('hello world")
 from numpy import random as rd
+import numpy as np
+
+result = np.random(10)
+
