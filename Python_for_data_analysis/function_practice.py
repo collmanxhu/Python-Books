@@ -15,7 +15,21 @@ def f():
 
 print(f())
 
+"""Function is object, so many constructs can be easily expressed 
 """
-What is Git, what is GitHub, and what's the difference? Learn the basics of
-Git and GitHub from the perspective of a Pythonista in this tutorial.
-"""
+# below are inputs from submitted survey data. One way to clear the mess is to use built-in strings
+# methods along with 're' standard lib module for regular expressions
+states = ['Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda', 'south carolina##', 'West virginia?']
+
+import re
+
+def clean_strings(strings):
+    result = []
+    for value in strings:
+        value = value.strip()
+        value = re.sub('[!#?]', '', value)
+        value = value.title()
+        result.append(value)
+    return result
+
+print(clean_strings(states))
