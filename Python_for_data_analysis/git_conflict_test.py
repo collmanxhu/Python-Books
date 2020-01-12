@@ -11,3 +11,4 @@ def git_conflict_resolve():
 
 print('hello world")
 from numpy import random as rd
+# Resolving Merge Conflicts
