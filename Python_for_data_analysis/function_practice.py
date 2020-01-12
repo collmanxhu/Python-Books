@@ -51,6 +51,7 @@ def clean_strings(strings, ops):
 
 print(clean_strings(states, clean_ops))
 
-
+# we can use function as arguments to other functions like the built-in
+# map function, which applies a function to a sequence of some kind.
 
         
