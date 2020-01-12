@@ -23,7 +23,7 @@ def cars():
     brand = 'toyota'
     return brand
 
-<<<<<<< HEAD
+
 alien_0 = {'color':'green', 'points':5}
 new_points = alien_0['points']
 print(f"You just earned {new_points} points!")
@@ -33,7 +33,5 @@ alien_0['y_position'] = 25
 print(alien_0)
 alien_0['color'] = 'yellow'
 print(alien_0)
-=======
+
 # test github desktop for handling conflict
-      
->>>>>>> 0eb4ebf1dabc57b4e672986161c66b061a2fcdb4
