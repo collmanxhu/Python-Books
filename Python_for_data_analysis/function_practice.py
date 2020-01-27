@@ -1,3 +1,5 @@
+"""FUNCTIONS ARE OBJECTS"""
+
 def my_func():
     a = 10
     b = 56
@@ -55,3 +57,83 @@ print(clean_strings(states, clean_ops))
 # map function, which applies a function to a sequence of some kind.
 for x in map(remove_punctuation, states):
     print(x)
+
+"""
+Anonymous (Lambda) Functions is a way of writing fuction consisting of
+single statement, the result of which is the return value. They are
+defined by Lambda keyword, which has no meaning other than "we are
+declaring an anonymous function.
+"""
+# lambda arguments : expression
+
+x = lambda a: a + 10
+print(x(5))
+
+def short_function(x):
+    return y * 2
+
+equiv_anon = lambda y: y * 2
+print(equiv_anon(2))
+
+""" assign the lambda function to a local variable """
+def apply_to_list(some_list, f):
+    return [f(x) for x in some_list]
+ints = [4,0,1,5,6]
+print(apply_to_list(ints, lambda x: x * 2))
+
+# example to sort a collection of strings by the number of distinct letters
+# list() function creates a list object
+# set() function creates a set object
+# sort() method sorts the list ascending by default.
+# list.sort(reverse=True|False, key=myFunc). Key=A function to specify the
+# sorting criteria(s)
+
+strings = ('foo', 'card', 'bar', 'aaaa', 'abab')
+list_strings = list(strings)
+# print(strings)
+print(list_strings)
+# print(list(strings))
+# print(set(list(strings)))
+# print(len(set(list(strings))))
+print(strings.sort(key=len(list_strings)))
+
+# strings.sort(key=lambda x: len(set(list(x))))
+# print(strings)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
