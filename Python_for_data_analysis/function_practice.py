@@ -119,6 +119,28 @@ from functools import partial
 add_five = partial(add_number, 10)
 print(add_five(5))
 
+""" Generators : iterate over a sequences, like objects in a list or lines in
+a file. """
+some_dict = {'a': 1, 'b': 2, 'c': 3}
+for key in some_dict:
+    print(key)
+# when you write for key in some_dict, python interpreter first create an
+# iterator out of some_dict
+dict_iterator = iter(some_dict)
+print(dict_iterator)
+# an iterator is any object that will yeild objects to the python interpreter
+# when used in a context like a for loop. Most methods expecting a list or
+# list-like object will also accept any iterable object. e.g. min, max, sun,
+# and type constructors like list and tuple
+print(list(dict_iterator))
+
+
+
+
+
+
+
+
 
 
 
