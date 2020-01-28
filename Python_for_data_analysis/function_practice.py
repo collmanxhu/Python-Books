@@ -161,6 +161,15 @@ print(sum(gen))
 
 print(dict((i, i ** 2) for i in range(5)))
 
+""" itertools module consists of a collection of generators. Usually, it takes
+a sequence of data and a function"""
+import itertools
+first_letter = lambda x: x[0]
+names = ['Alan', 'Adam', 'Wes', 'Will', 'Albert', 'Steven']
+for letter, names in itertools.groupby(names, first_letter):
+    print(letter, list(names))     # names is a generator
+
+
 
 
 
