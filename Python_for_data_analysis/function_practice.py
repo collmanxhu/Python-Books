@@ -134,6 +134,46 @@ print(dict_iterator)
 # and type constructors like list and tuple
 print(list(dict_iterator))
 
+# create generator on request using yield.
+def squares(n=10):
+    print('Generating squares from 1 to {0}'.format(n ** 2))
+    for i in range(1, n + 1):
+        yield i ** 2
+gen = squares()             # When call the generator, no code is immediately
+print(gen)                  # executed.
+for x in gen:               # Until you request elements from the generator.
+    print(x, end=' ')
+    
+""" Generator Expressions, to create one, enclose with () instead of [] """
+gen = (x ** 2 for x in range(100))
+print(gen)
+# above code is completely equivalent to following generator verbose累贅的
+# generator.
+def _make_gen():
+    for x in range(100):
+        yield x ** 2
+gen = _make_gen()
+
+""" Generator expression can be used as function argument, instead of list
+comprehensions """
+gen = (x ** 2 for x in range(100))
+print(sum(gen))
+
+print(dict((i, i ** 2) for i in range(5)))
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
 
